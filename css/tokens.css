@@ -1,0 +1,50 @@
+/* Kitchen Saathi design tokens.
+   Lime paper, black ink, one sunny yellow accent, on a peach-to-coral backdrop.
+   Big heavy grotesk headings, thin black rules, lots of air. */
+:root {
+  color-scheme: light;
+
+  /* Surfaces */
+  --lime: #EEF6C9;           /* the page */
+  --lime-2: #E2EDB2;         /* wells, pressed states, skeletons */
+  --paper: #FFFEF6;          /* sheets and inputs */
+  --peach: #FCE6D8;          /* desktop backdrop, top */
+  --coral: #F39272;          /* desktop backdrop, bottom; alert dot */
+
+  /* Ink — every pairing below is checked against --lime */
+  --ink: #111111;            /* 16.8:1 */
+  --ink-2: #3A3A33;          /* 10.2:1 — secondary text */
+  --ink-3: #585850;          /* 6.4:1 — meta text */
+  --line: #111111;           /* strong rules */
+  --line-soft: rgba(17, 17, 17, .14);
+
+  /* Accent */
+  --sun: #FFD43B;            /* squiggle, highlight, selected wash — a fill, never text */
+  --sun-soft: #FFF0A8;
+
+  /* Status (always icon + word + colour) */
+  --ok: #24602B;             /* 6.7:1 */
+  --warn: #7A4800;           /* 6.8:1 */
+  --bad: #AE2219;            /* 6.1:1 */
+
+  /* Type */
+  --font-display: "Inter Tight", "Anek Devanagari", system-ui, sans-serif;
+  --font-body: "Inter", "Anek Devanagari", "Nirmala UI", system-ui, sans-serif;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-md: 1.0625rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.75rem;
+
+  /* Space & shape */
+  --gutter: 20px;
+  --tap: 48px;
+  --radius: 22px;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --dur: 200ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur: 0ms; }
+}
